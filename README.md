@@ -48,8 +48,8 @@ $ ifort xtc-interface-wrap.o readxtc-wrap.f90 -lxdrfile -L/home/hjung/xdr1.1.4/l
 ```
 To test, do './a.out' and/or compare with previous result './a.out'.
 
-    * Change of original code of wrapper version I did is that I modify module name *xtc* to *xtc_mod* in source files because intel fortran compiler prints errors that 'defined type, xtc is the same as module xtc.'. I think it comes from dulicate module names of two versions.
-    *In my case, I choose wrapper version for xtc conversion. Either is fine.
+  * Change of original code of wrapper version I did is that I modify module name *xtc* to *xtc_mod* in source files because intel fortran compiler prints errors that 'defined type, xtc is the same as module xtc.'. I think it comes from dulicate module names of two versions.
+  *In my case, I choose wrapper version for xtc conversion. Either is fine.
 
 ## Install
 It needs DensProf.f90, xtc-interface-wrap.o, and xtc_mod.mod (the last two file comes from compiling xtc code) to compile. 'xtc_mod.mod' file should be located in the same folder with DensProf.f90.
