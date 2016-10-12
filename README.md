@@ -30,9 +30,9 @@ export LD_LIBRARY_PATH=/home/(username)/xdr1.1.4/lib
 $ ifort -c xtc-interface.f90 -lxdrfile -L/home/hjung/xdr1.1.4/lib
 ```
 
-      To check, the command './a.out' with 'traj.xtc' file will print out Time, Step, Precision, No.Atoms for test. Then compile wrapper version of read_xtc_file after compiling:
+    * To check, the command './a.out' with 'traj.xtc' file will print out Time, Step, Precision, No.Atoms for test. Then compile wrapper version of read_xtc_file after compiling:
 
-```
+```sh
 ifort xtc-interface.o readxtc.f90 -lxdrfile -L/home/hjung/xdr1.1.4/lib
 ```
 
